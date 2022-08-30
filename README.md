@@ -74,6 +74,56 @@ class textElement {
   }
 }
 
+// 渐变与描边 demo
+{
+  type: 'effectText',
+​
+  width: 580,
+  height: 126,
+  left: 0,
+  top: 0,
+​
+  contents: [{
+    fontSize: 48,
+    fontWeight: 700,
+    fontFamily: 'sans-serif',
+    fontStyle: 'normal',
+    text: '渐变与描边'
+  }],
+  effects: [{
+    strokeWidth: 16,
+    stroke: '#000',
+    offset: [0, 0],
+    fill: 'linear-gradient(0deg, rgb(255, 142, 193) 4%, rgb(255, 152, 185) 14%, rgb(255, 142, 193) 30%,rgb(255, 188, 156) 45%, rgb(255, 234, 119) 73%,rgb(255, 234, 119) 85%)'
+  }]
+}
+
+// 不同文字包含不同样式 demo
+{
+  type: 'effectText',
+​
+  width: 352,
+  height: 40,
+  left: 0,
+  top: 0,
+​
+  fontSize: 32,
+  fontFamily: 'aria',
+  color: '#000',
+​
+  content: [{
+    text: '不同文字'
+  }, {
+    text: '包含',
+    color: '#ff0000',
+    fontSize: 48
+  }, {
+    text: '不同',
+  }, {
+    text: '样式',
+    fontStyle: 'italic'
+  }],
+}
 ``` 
 
 ## 效果实现
@@ -156,3 +206,4 @@ body {
 ## 参考练习
 
 https://juejin.cn/post/7084551440231825421
+https://segmentfault.com/a/1190000039362755
