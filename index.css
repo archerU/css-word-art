@@ -60,6 +60,7 @@ body {
   z-index: 0;
   font-size: 100px;
   font-weight: 700;
+  height: 140px;
 }
 .text-wai-stroke::before,
 .text-wai-stroke::after {
@@ -82,4 +83,63 @@ body {
   font-weight: 700;
   color: #ef5c78;
   text-shadow: 0px 0px 50px yellow;
+}
+
+/* demo0 */
+.demo-style-0 {
+  font-size: 66px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 5px 2px #DB6F20;
+}
+
+/* demo1 */
+.demo-style-1 {
+  font-size: 66px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke-color: #E02828;
+  -webkit-text-stroke-width: 2px;
+  text-shadow:5px 2px 22px #F8B6C0;
+}
+
+/* demo2 */
+.demo-style-2 {
+  font-size: 66px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 2px;
+  text-shadow:5px 2px #F2536D;
+}
+
+/* demo3 */
+.demo-style-3 {
+  position: relative;
+  z-index: 0;
+  font-size: 66px;
+  font-weight: 700;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  background-image: linear-gradient(0deg, #FFF1A6 0%, #EE4850 25%, #B564D9 50%, #FEF1A6 75%);
+  background-image: -webkit-linear-gradient(0deg, #FFF1A6 0%, #EE4850 25%, #B564D9 50%, #FEF1A6 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* demo4 */
+.demo-style-4 {
+  position: relative;
+  z-index: 0;
+  font-size: 66px;
+  font-weight: 700;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+  background-image: linear-gradient(0deg, #FFF1A6 0%, #EE4850 25%, #B564D9 50%, #FEF1A6 75%);
+  background-image: -webkit-linear-gradient(0deg, #FFF1A6 0%, #EE4850 25%, #B564D9 50%, #FEF1A6 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: 5px 2px #FFB1C2;
 }
