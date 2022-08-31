@@ -1,6 +1,8 @@
 
-
 ## 文字特效
+
+文字效果包含：字族、字号、字体样式、填充、描边、阴影
+## css 文字特效
 
 文字特效的能力，本质上可以视为多层不同效果文字的叠加，使用 text-fill、text-stroke、background-clip等 CSS 属性加上多个元素重叠和偏移来形成特效的效果。
 注意：文字特效的优先级会高于 color 和 shadow，当文字包含特效时，color 和 shadow 的值会被忽略不再生效。所以当文字是渐变的时候，不能使用 shadow 来生成阴影。
@@ -16,7 +18,7 @@ text-stroke只有两个属性合并：text-stroke-width和text-stroke-color.就�
 text-shadow的属性可以不断叠加，但是text-stroke则不可以，如果想要实现多重描边效果，可以借助伪元素多层叠加模拟。
 
 
-##  文字基础信息 + 文字特效
+###  文字基础信息 + 文字特效
 
 ```
 class textElement {
@@ -126,9 +128,9 @@ class textElement {
 }
 ``` 
 
-## 效果实现
+### 效果实现
 
-- 纹理 ❌
+- 纹理（图片实现）✅
 - 渐变 ✅
   - 单渐变 ✅
   - 多重渐变 ✅
@@ -150,7 +152,7 @@ class textElement {
 - 阴影 + 发光 ✅
 - 多重描边（最多3重）+ 阴影 ❌
 
-### 渐变
+#### 渐变
 
 ```
 // 3行代码， 注意3个属性的顺序
@@ -172,7 +174,7 @@ color: transparent
 4、多重渐变 linear-gradient 逗号拼接
 linear-gradient(0deg, rgb(255, 142, 193) 4%, rgb(255, 152, 185) 14%, rgb(255, 142, 193) 30%,rgb(255, 188, 156) 45%, rgb(255, 234, 119) 73%,rgb(255, 234, 119) 85%);
 
-### 描边
+#### 描边
 
 ```
 // 2行代码
@@ -184,7 +186,7 @@ text-stroke只有两个属性合并：text-stroke-width和text-stroke-color，�
 
 注意：text-stroke是居中描边的。text-stroke 属性是向内填充，设置的像素如果很大，就会把字给挡住。
 
-### 阴影
+#### 阴影
 
 ```
 // 1行代码
@@ -194,6 +196,29 @@ text-shadow: 4px 4px #fff, 8px 8px 3px green;
 
 text-shadow的属性可以不断叠加，跟background-image 一致。
 
+## canvas 文字特效
+
+- 纹理（图片实现）✅
+- 渐变 ✅
+  - 单渐变 ✅
+  - 多重渐变 ✅
+- 描边 ✅
+  - 单描边 ✅
+  - 多重描边（伪元素::before ::after 实现）✅
+  - 多重描边（外描边是圆形）❌
+- 阴影 ✅
+- 发光（阴影实现）✅
+- 底纹（图片实现）✅
+
+组合实现：
+
+- 渐变 + 描边 ✅
+- 渐变 + 阴影 ✅
+- 渐变 + 发光 （只能最后一个阴影发光）✅
+- 描边 + 阴影 ✅
+- 描边 + 发光 （只能最后一个阴影发光）✅
+- 阴影 + 发光（只能最后一个阴影发光）✅
+- 多重描边（可以无限叠加）+ 多重阴影（可以无限叠加） ✅
 
 ## 字体库
 在 [Google Fonts](https://fonts.google.com/) 找到字体，[Google Fonts 使用教程](https://www.zhihu.com/question/19578734)
