@@ -10,7 +10,7 @@ const json = {
     "top": "50"
   },
   "config": {
-    "textAlign": "center",
+    "textAlign": "right",
     "textBaseline": "top",
     "lineHeight": 30,
     "font": {
@@ -50,7 +50,6 @@ const json = {
     ]
   }
 }
-
 
 function parseJsonToCanvas(json) {
   const canvas = document.querySelector('canvas');
@@ -101,5 +100,5 @@ function renderLinearGradient(text, gradient, ctx) {
   });
   return _gradient;
 }
-
 parseJsonToCanvas(json);
+

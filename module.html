@@ -2,11 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> -->
+    <style type="text/css">
+     /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+      @font-face {
+        font-family: "阿里巴巴普惠体 2.0 105 Heavy";
+        font-weight: 900;
+        src: url("./font-family/44b5dDG7-HRBhsh4rHP3Y.woff2") format("woff2"),
+        url("./font-family/44b5dDG7-HRBhsh4rHP3Y.woff") format("woff");
+        font-display: swap;
+      }
+
+      html,body {
+        font-family: "阿里巴巴普惠体 2.0 105 Heavy";
+      }
+      
+    </style>
   </head>
   <body>
     <canvas id="canvas"></canvas>
-    
-    <script src="./module.js"></script>
+    <script async src="./module2.js"></script>
   </body>
 </html>
