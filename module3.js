@@ -647,6 +647,45 @@
 //   }
 // }
 
+// const json = {
+//   "moduleId": 'default',
+//   "name": "默认模版",
+//   "canvas": {
+//     "width": 696,
+//     "height": 880
+//   },
+//   "config": {
+//     "font": {
+//       "fontStyle": "normal",
+//       "fontWeight": 900,
+//       "fontSize": "80px",
+//       "fontFamily": "SimSun, Songti SC"
+//     },
+//     "contents": [
+//       {
+//         "text": "北欧卧室",
+//         "fillStyle": "#FFFFFF",
+//         "textAlign": "center",
+//         "shadowOffsetX": 4,
+//         "shadowOffsetY": 2,
+//         "shadowBlur": 10,
+//         "shadowColor": "#1343DB",
+//         "position": {
+//           "left": 0,
+//           "right": 0,
+//           "top": 550
+//         }
+//       }
+//     ],
+//     "effects": [
+//       {
+//         "strokeStyle": "#1343DB",
+//         "lineWidth": 2
+//       }
+//     ]
+//   }
+// }
+
 const json = {
   "moduleId": 'default',
   "name": "默认模版",
@@ -663,24 +702,36 @@ const json = {
     },
     "contents": [
       {
-        "text": "北欧卧室",
-        "fillStyle": "#FFFFFF",
+        "text": "纯色韩版防滑",
+        "fillStyle": "#FCD258",
         "textAlign": "center",
-        "shadowOffsetX": 4,
-        "shadowOffsetY": 2,
-        "shadowBlur": 10,
-        "shadowColor": "#1343DB",
         "position": {
           "left": 0,
           "right": 0,
-          "top": 550
-        }
-      }
-    ],
-    "effects": [
+          "top": 140
+        },
+        "effects": [
+          {
+            "strokeStyle": "#000000",
+            "lineWidth": 4
+          }
+        ]
+      },
       {
-        "strokeStyle": "#1343DB",
-        "lineWidth": 2
+        "text": "家用家居棉鞋",
+        "fillStyle": "#ffffff",
+        "textAlign": "center",
+        "position": {
+          "left": 0,
+          "right": 0,
+          "top": 615
+        },
+        "effects": [
+          {
+            "strokeStyle": "#000000",
+            "lineWidth": 4
+          }
+        ]
       }
     ]
   }
