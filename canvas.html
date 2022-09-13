@@ -5,21 +5,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
     <style>
       body {
-        /* background-color: #000; */
+        background-color: #000;
       }
-      /* canvas {
-        width: 600px;
-        height: 300px;
-      } */
+      .text {
+        color: #fff;
+      }
     </style>
   </head>
   <body>
+    
+    <div class="text">多重描边/多色渐变/多层阴影/文字镂空/边缘模糊/发光效果/文字底图/单字循环变色(第一个字显示红色，第二个字显示白色，第三个字显示紫色等等)</div>
     <!-- <canvas id="canvas"></canvas> -->
     <canvas id="canvas-shadow"></canvas>
     <canvas id="canvas-gradient"></canvas>
     <canvas id="canvas-stroke"></canvas>
     <canvas id="canvas-twoStroke"></canvas>
     
+    <canvas id="canvas-discoloration"></canvas>
     <script src="./canvas.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@ function canvas() {
     twoStroke();
 }
 
+// 双重描边
 function twoStroke() {
   const canvas = document.getElementById('canvas-twoStroke');
   const ctx = canvas.getContext('2d');
@@ -21,17 +22,18 @@ function twoStroke() {
   ctx.lineWidth = 20;
   ctx.strokeStyle = gradient;
   ctx.strokeWidth = 20;
-  ctx.strokeText("大地色哑光修饰眼影",10, 50);
+  ctx.strokeText("canvas花字演示",10, 50);
   // 第二次描边
   ctx.lineWidth = 5;
   ctx.strokeStyle = 'red';
   ctx.strokeWidth = 5;
-  ctx.strokeText("大地色哑光修饰眼影",10, 50);
+  ctx.strokeText("canvas花字演示",10, 50);
   // 绘制文字
   ctx.fillStyle = 'green';
-  ctx.fillText("大地色哑光修饰眼影-双重描边",10,50);
+  ctx.fillText("canvas花字演示-双重描边",10,50);
 }
 
+// 描边
 function stroke() {
   const canvas = document.getElementById('canvas-stroke');
   const ctx = canvas.getContext('2d');
@@ -46,12 +48,13 @@ function stroke() {
   ctx.lineWidth = 20;
   ctx.strokeStyle = gradient;
   ctx.strokeWidth = 20;
-  ctx.strokeText("大地色哑光修饰眼影",10, 50);
+  ctx.strokeText("canvas花字演示",10, 50);
   // 绘制文字
   ctx.fillStyle = 'red';
-  ctx.fillText("大地色哑光修饰眼影-描边",10,50);
+  ctx.fillText("canvas花字演示-描边",10,50);
 } 
 
+// 阴影
 function shadow() {
   const canvas = document.getElementById('canvas-shadow');
   const ctx = canvas.getContext('2d');
@@ -66,10 +69,11 @@ function shadow() {
   // 填充颜色
   ctx.fillStyle = 'red';
   // 绘制文字
-  ctx.fillText("大地色哑光修饰眼影-阴影",10,60);
+  ctx.fillText("canvas花字演示-阴影",10,60);
 }
 
 
+// 渐变
 function gradient() {
   const canvas = document.getElementById('canvas-gradient');
   const ctx = canvas.getContext('2d');
@@ -83,7 +87,7 @@ function gradient() {
   gradient.addColorStop("1.0","red");
   ctx.fillStyle = gradient;
   // 绘制文字
-  ctx.fillText("大地色哑光修饰眼影-渐变",10,50);
+  ctx.fillText("canvas花字演示-渐变",10,50);
 }
 
 
